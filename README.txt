@@ -10,3 +10,4 @@ eg <div class = "col-12 col-sm-5"> content takes all 12 cols when the screen is 
 <div class = "col-auto"> occupied cols determined by the content
 <div class = "col-sm-4 offset-sm-1"> offset the 4 col div to right by one column
 custom css overrides Bootstrap CSS
+Bootstrap utility class class = "d-none d-sm-block" display property = none when xs, block when sm and beyond
