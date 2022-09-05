@@ -11,3 +11,6 @@ eg <div class = "col-12 col-sm-5"> content takes all 12 cols when the screen is 
 <div class = "col-sm-4 offset-sm-1"> offset the 4 col div to right by one column
 custom css overrides Bootstrap CSS
 Bootstrap utility class class = "d-none d-sm-block" display property = none when xs, block when sm and beyond
+.navbar class is Bootstrap
+.container class is bootstrap
+<i>html tag is for icon
