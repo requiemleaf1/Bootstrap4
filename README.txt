@@ -14,3 +14,5 @@ Bootstrap utility class class = "d-none d-sm-block" display property = none when
 .navbar class is Bootstrap
 .container class is bootstrap
 <i>html tag is for icon
+<table> is html tag. Bootstrap has .table class series.
+.card is Bootstrap css class
