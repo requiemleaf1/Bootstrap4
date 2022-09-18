@@ -16,3 +16,5 @@ Bootstrap utility class class = "d-none d-sm-block" display property = none when
 <i>html tag is for icon
 <table> is html tag. Bootstrap has .table class series.
 .card is Bootstrap css class
+<dl> description list,<dt> description term, <dd> description description
+.badge is Bootstrap css class
