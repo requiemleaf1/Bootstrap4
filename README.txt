@@ -20,3 +20,6 @@ Bootstrap utility class class = "d-none d-sm-block" display property = none when
 .badge is Bootstrap css class
 <a> used id in the href"#+id" to link to a section with the id
 .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly different rendering).
+
+Bootstrap JS components: use js/jQuery-based components without wirting js code
+eg: data-toggle, data-spy are bootstrap js components
