@@ -36,7 +36,7 @@
       </div>
     </nav>
     <div id = "loginModal" class = "modal fade" role = "dialog">
-      <div clss = "modal-dialog modal-lg" role ="content">
+      <div clss = "modal-dialog modal-sm" role ="content">
         <div class ="modal-content">
           <div class= "modal-header">
             <h4 class = "modal-title">Login</h4>
@@ -44,7 +44,7 @@
           </div>
           <div class ="modal-body">
             <form>
-                  <div class="form-row">
+                  <!--<div class="form-row">
                              <div class="form-group col-sm-4">
                                      <label class="sr-only" for="exampleInputEmail3">Email address</label>
                                      <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
@@ -64,12 +64,92 @@
                          <div class="form-row">
                              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
                              <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                         </div>-->
+                         <div class="form-row">
+                         <div class="form-group col-sm-4">
+                             <label for="exampleInputEmail1">Email address</label>
+                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                           </div>
+                           <div class="form-group col-sm-4">
+                             <label for="exampleInputPassword1">Password</label>
+                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                           </div>
+
+                       </div>
+                         <div class="form-row">
+                           <div class= "col-sm-auto">
+                           <div class="form-check">
+                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                             <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                           </div>
                          </div>
+                         <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                           <button type="submit" class="btn btn-primary btn-sm ml-1">Login</button>
+                        </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <div id = "reserveModal" class = "modal fade" role = "dialog">
+      <div clss = "modal-dialog modal-sm" role ="content">
+        <div class ="modal-content">
+          <div class= "modal-header">
+            <h4 class = "modal-title">Reserve a Table</h4>
+            <button type ="button" class ="close" data-dismiss ="modal">&times;</button>
+          </div>
+          <div class ="modal-body">
+            <form>
+              <div class = "form-group row">
+                  <label class = "col-md-2 mr-4 col-form-label">Numbers of Guests</label>
+                  <div class = "row col-md-10 " >
+                    <div class = "col-sm-1 mr-1"><input type = "radio" checked class = "form-check-input" id ="one" name = "anynum" >
+                    <label class = "form-check-label" for = "one"> 1 </label></div>
+                    <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="two" name = "anynum" >
+                    <label class = "form-check-label" for = "two"> 2 </label></div>
+                    <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="three" name = "anynum" >
+                    <label class = "form-check-label" for = "three"> 3 </label></div>
+                    <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="four" name = "anynum" >
+                    <label class = "form-check-label" for = "four"> 4 </label></div>
+                    <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="five" name = "anynum" >
+                    <label class = "form-check-label" for = "five"> 5 </label></div>
+                    <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="six" name = "anynum" >
+                    <label class = "form-check-label" for = "six"> 6 </label></div>
+                  </div>
+              </div>
+              <div class = "form-group row ">
+               <label class = "col-md-2 mr-3 col-form-label">Section</label>
+               <div class = "row col-md-10 " >
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-success active">
+                   <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-smoking
+                  </label>
+                  <label class="btn btn-danger">
+                   <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                  </label>
+                </div>
+               </div>
+              </div>
+              <div class = "form-group row ">
+                <label class = "col-md-2 col-form-label">Date and Time</label>
+                <div class = "col-md-5">
+                  <input type = "text" class = "form-control" id ="date" name = "date" placeholder = "Date">
+                </div>
+                <div class = "col-md-5">
+                  <input type = "text" class = "form-control" id ="time" name = "time" placeholder = "Time">
+                </div>
+              </div>
+              <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header class = "jumbotron" >
         <div class = "container">
             <div class = "row row-header">
@@ -81,13 +161,69 @@
                   <image src = "img/logo.png" class = "img-fluid"></image>
                 </div>
                 <div class = "col-12 col-sm-3 nav-link btn-block align-self-center">
-                  <a class="btn btn-sm btn-warning" href="#reserve" role="button" data-toggle = "tooltip" data-html = "true" title ="Or Call Is at <br /><strong>+1 123456789</strong>" data-placement ="bottom">Reserve Now</a>
+                  <a class="btn btn-sm btn-warning" href="#reserve" role="button" data-toggle = "modal" data-target = "#reserveModal">Reserve Now</a>
                 </div>
             </div>
         </div>
     </header>
 
     <div class = "container">
+      <div id = "reserveModal" class = "modal fade" role = "dialog">
+        <div clss = "modal-dialog modal-sm" role ="content">
+          <div class ="modal-content">
+            <div class= "modal-header">
+              <h4 class = "modal-title">Reserve a Table</h4>
+              <button type ="button" class ="close" data-dismiss ="modal">&times;</button>
+            </div>
+            <div class ="modal-body">
+              <form>
+                <div class = "form-group row">
+                    <label class = "col-md-2 mr-4 col-form-label">Numbers of Guests</label>
+                    <div class = "row col-md-10 " >
+                      <div class = "col-sm-1 mr-1"><input type = "radio" checked class = "form-check-input" id ="one" name = "anynum" >
+                      <label class = "form-check-label" for = "one"> 1 </label></div>
+                      <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="two" name = "anynum" >
+                      <label class = "form-check-label" for = "two"> 2 </label></div>
+                      <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="three" name = "anynum" >
+                      <label class = "form-check-label" for = "three"> 3 </label></div>
+                      <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="four" name = "anynum" >
+                      <label class = "form-check-label" for = "four"> 4 </label></div>
+                      <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="five" name = "anynum" >
+                      <label class = "form-check-label" for = "five"> 5 </label></div>
+                      <div class = "col-sm-1 mr-1"><input type = "radio" class = "form-check-input" id ="six" name = "anynum" >
+                      <label class = "form-check-label" for = "six"> 6 </label></div>
+                    </div>
+                </div>
+                <div class = "form-group row ">
+                 <label class = "col-md-2 mr-3 col-form-label">Section</label>
+                 <div class = "row col-md-10 " >
+                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                     <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-smoking
+                    </label>
+                    <label class="btn btn-secondary">
+                     <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                    </label>
+                  </div>
+                 </div>
+                </div>
+                <div class = "form-group row ">
+                  <label class = "col-md-2 col-form-label">Date and Time</label>
+                  <div class = "col-md-5">
+                    <input type = "text" class = "form-control" id ="date" name = "date" placeholder = "Date">
+                  </div>
+                  <div class = "col-md-5">
+                    <input type = "text" class = "form-control" id ="time" name = "time" placeholder = "Time">
+                  </div>
+                </div>
+                <div class = "col-12 offset-sm-2">
+                    <input type="submit" class="btn btn-success" value="Reserve">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row row-content">
           <div class="col">
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -267,11 +403,11 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
+        <!--<script>
           $(document).ready(function(){
             $('[data-toggle = "tooltip"]').tooltip();
           })
-        </script>
+        </script>-->
 </body>
 
 </html>
