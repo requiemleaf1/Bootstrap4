@@ -24,4 +24,7 @@ Bootstrap utility class class = "d-none d-sm-block" display property = none when
 Bootstrap JS components: use js/jQuery-based components without wirting js code
 eg: data-toggle, data-spy are bootstrap js components
 
+jquery scripts to control actions of html elements and css classes
 css preprocesser lan. less & Sass
+
+create distribution folder that contains all the contents of the web pages(css, image, font, js(html)) for the web server to serve the website
